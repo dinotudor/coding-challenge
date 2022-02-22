@@ -161,7 +161,7 @@ const Coach = () => {
               <List className={ styles.specialityList }>
               { data.coach.specialties.map( item => {
                 return(
-                  <ListItem className={ styles.centerLink }>
+                  <ListItem key={ item.id } className={ styles.centerLink }>
                     <Icon className={ styles.iconColor }>horizontal_rule</Icon>
                       { item.name }
                   </ListItem>
