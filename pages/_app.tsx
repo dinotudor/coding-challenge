@@ -31,6 +31,10 @@ function MyApp({ Component, pageProps }: AppProps) {
               href="https://pimage.sport-thieme.de/icon32/springer"
               type="image/png"
             />
+            <link
+              href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
+            </link>
           </Head>
           <Component {...pageProps} />
         </ApolloProvider>

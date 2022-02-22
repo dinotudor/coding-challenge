@@ -1,0 +1,87 @@
+.containerCoach {
+  padding: 30px;
+}
+.centerLink {
+  display: flex;
+}
+.mr {
+  margin-right: 10px;
+}
+.mb {
+  margin-bottom: 15px;
+}
+.input {
+  width: 280px;
+  max-width: 80%;
+  margin-bottom: 15px;
+  background-color: #F0F0F0;
+}
+.editCoachCard {
+  padding: 20px;
+  max-width: 420px;
+  margin: auto;
+  background-color: #FFF;
+}
+.editCoachTitle {
+  display: flex;
+  padding-left: 100px;
+  font-weight: bold;
+  color: #D0D0D0;
+}
+.iconColor {
+  color: #D0D0D0;
+  margin-right: 10px;
+}
+.boxGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 30px;
+}
+.boxCard {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  background-color: #F0F0F0;
+  margin-bottom: 20px;
+}
+.cardTitle {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #D0D0D0;
+  padding-top: 30px;
+}
+.specialityList {
+  padding-left: 20px;
+}
+.btnBack {
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .containerCoach {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .boxGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .btnBack {
+    justify-content: center;
+    padding-top: 25px;
+  }
+  .logoCoachPage {
+    display: block;
+    position: relative;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .input {
+    width: 235px;
+    max-width: 90%;
+  }
+}

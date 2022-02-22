@@ -1,0 +1,35 @@
+.cardBox {
+  max-width: 700px;
+  margin: auto;
+  background-color: #F0F0F0;
+  margin-bottom: 20px;
+}
+.desc {
+  padding: 10px 0;
+  margin: 15px 0;
+  color: #606060;
+  font-size: 18px;
+}
+.coachBtn {
+  display: block;
+  background-color: rgb(0, 43, 79);
+  padding: 10px;
+  text-align: center;
+  width: 25%;
+  color: #fff;
+  margin: auto;
+  transition: background-color 0.5s ease;
+  border-radius: 2px;
+}
+.coachBtn:hover {
+  background-color: rgb(0, 64, 116);
+}
+
+@media screen and (max-width: 480px) {
+  .coachBtn {
+    width: 80%;
+  }
+  .desc {
+    font-size: 16px;
+  }
+}

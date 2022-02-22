@@ -1,0 +1,27 @@
+.list {
+  width: 100%;
+  max-width: 420px;
+  background-color: #F0F0F0;
+  margin: auto;
+}
+.listSubHeader {
+  padding-top: 20px;
+}
+.listTitle {
+  margin: auto;
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+}
+.listTextSeparator {
+  display: inline;
+  color: #000;
+}
+.listTextSecondary {
+  display: inline;
+  color: #606060;
+}
+.listDivider {
+  width: 100%;
+  background-color: #D0D0D0;
+}
