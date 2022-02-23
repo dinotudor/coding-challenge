@@ -6,17 +6,16 @@ import styles from '../styles/home.module.css';
 
 const Home: NextPage = () => {
   return (
-
     <Container>
       <Box paddingY={ 5 }>
         <Card className={ styles.cardBox }>
           <CardContent>
             <Image src="/siteLogo-inten.png" alt="Sport-Thieme Logo" width="230" height="54"/>
             <Typography className={ styles.desc } variant="body2" color="text.secondary">
-              This is a beta version of a new interface for editing coches. We appreciate your feedback!
+              This is a beta version of a new interface for editing coaches. We would appreciate your feedback!
             </Typography>
             <Link href="/coaches">
-              <a className={ styles.coachBtn }>Coches List</a>
+              <a className={ styles.coachBtn }>Coaches List</a>
             </Link>
           </CardContent>
         </Card>

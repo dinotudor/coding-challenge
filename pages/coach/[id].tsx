@@ -66,8 +66,9 @@ const Coach = () => {
     ],
   });
 
+  let initialValue: String = '';
   const [city, setCity] = useState<string>();
-  const [specialty, setSpecialty] = useState<string>();
+  const [specialty, setSpecialty] = useState<String>(initialValue);
   const [saveCity, setSaveCity] = useState<boolean>(true);
   const [saveSpecialty, setSaveSpecialty] = useState<boolean>(true);
 
@@ -85,13 +86,13 @@ const Coach = () => {
   };
 
   const handleSubmitCoach = (e) => {
-        e.preventDefault();
-        updateCity({
-          variables: {
-            "data": {
-              "city": {
-                "set": city
-                }
+    e.preventDefault();
+    updateCity({
+      variables: {
+        "data": {
+          "city": {
+            "set": city
+            }
             },
             "where": {
               "id": +router.query.id
@@ -156,9 +157,9 @@ const Coach = () => {
               </Typography>
               <Typography className={ styles.centerLink } variant="h6">
                 <Icon className={ styles.iconColor }>stars</Icon>
-                <strong>Specialities</strong>
+                <strong>Specialties</strong>
               </Typography>
-              <List className={ styles.specialityList }>
+              <List className={ styles.specialtyList }>
               { data.coach.specialties.map( item => {
                 return(
                   <ListItem key={ item.id } className={ styles.centerLink }>
